@@ -772,7 +772,9 @@ module.exports = async function trainnlp(manager) {
     //khmer version
 
     manager.addDocument('en', 'hi o', 'users.welcome');
+    manager.addDocument('en', 'ah jm', 'users.angry');
 
+    manager.addAnswer('en', 'users.angry', "Kac mes b :(");
     manager.addAnswer('en', 'users.welcome', "hi b");
 
 };
