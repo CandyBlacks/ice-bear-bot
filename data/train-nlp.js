@@ -356,7 +356,17 @@ module.exports = async function trainnlp(manager) {
   manager.addDocument('en', 'I hate you', 'user.needcomfort');
   manager.addDocument('en', 'I am having a bad day', 'user.needcomfort');
   manager.addDocument('en', 'Bear Bear', 'user.lovesagent');
+  
+
+  manager.addDocument('en', 'Bear Bear', 'user.lovesagent');
+
+
+
+
   manager.addAnswer('en', 'agent.acquaintance', "I'm a virtual agent");
+  
+
+
   manager.addAnswer(
     'en',
     'agent.acquaintance',
@@ -758,4 +768,11 @@ module.exports = async function trainnlp(manager) {
     'user.needsadvice',
     "I'm not sure I'll have the best answer, but I'll try"
   );
+
+    //khmer version
+
+    manager.addDocument('en', 'hi o', 'users.welcome');
+
+    manager.addAnswer('en', 'users.welcome', "hi b");
+
 };
